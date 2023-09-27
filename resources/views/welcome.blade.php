@@ -1,1 +1,1 @@
-Assalomu alekum
+Test rejimida ishlamaoqda

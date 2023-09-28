@@ -7,7 +7,7 @@
                         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
                             <span style="color: #000000; font-size: 24px;">Telegram-бот <b>Webhook</b> направление</span>
                             <h6 class="font-weight-light">для удобного программиста</h6>
-                            <form class="pt-3" method="post" action="{{ route('webhook') }}">
+                            <form class="pt-3" method="get" action="{{ route('webhook') }}">
                                 @csrf
                                 <div class="form-group">
                                     <label class="form-label">Токен тelegram-бота</label>

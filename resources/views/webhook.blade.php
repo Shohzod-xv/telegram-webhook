@@ -1,38 +1,30 @@
 @extends('layouts/app')
 @section('content')
     <div class="container-fluid page-body-wrapper full-page-wrapper">
-            <div class="content-wrapper d-flex justify-content-top auth px-0" >
-                <div class="row w-100 mx-0">
+            <div class="content-wrapper d-flex justify-content-top auth px-0">
+                <div class="row w-100 mx-0 h-100">
                     <div class="col-lg-6 mx-auto mt-5">
                         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-                            <h4>Hello! let's get started</h4>
-                            <h6 class="font-weight-light">Sign in to continue.</h6>
-                            <form class="pt-3">
+                            <span style="color: #000000; font-size: 24px;">Telegram-бот <b>Webhook</b> направление</span>
+                            <h6 class="font-weight-light">для удобного программиста</h6>
+                            <form class="pt-3" method="post" action="{{ route('webhook') }}">
+                                @csrf
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                                    <label class="form-label">Токен тelegram-бота</label>
+                                    <input type="text" name="token" class="form-control" placeholder="6473588416:AAFnY1OOxuinIyrZ4IlsYNzTHnhxltfRE0E">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                                    <label class="form-label">Адрес, по которому находится код бота</label>
+                                    <input type="text" name="address" class="form-control" placeholder="https://hostname.uz/folder_name/index.php">
                                 </div>
-                                <div class="mt-3">
-                                    <a class="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn" href="../../index.html">SIGN IN</a>
+                                <div class="mt-4 font-weight-light">
+                                    <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #000000; background-color: #eea321; border-radius: 4px; border: none" name="create" value="getUpdates"><span>Don't have an account?</span>
                                 </div>
-                                <div class="my-2 d-flex justify-content-between align-items-center">
-                                    <div class="form-check">
-                                        <label class="form-check-label text-muted">
-                                            <input type="checkbox" class="form-check-input">
-                                            Keep me signed in
-                                            <i class="input-helper"></i></label>
-                                    </div>
-                                    <a href="#" class="auth-link text-black">Forgot password?</a>
+                                <div class="font-weight-light">
+                                    <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #000000; background-color: #1aef1e; border-radius: 4px; border: none" name="create" value="setWebhook"><span>Don't have an account?</span>
                                 </div>
-                                <div class="mb-2">
-                                    <button type="button" class="btn btn-block btn-facebook auth-form-btn">
-                                        <i class="mdi mdi-facebook mr-2"></i> Connect using facebook
-                                    </button>
-                                </div>
-                                <div class="text-center mt-4 font-weight-light">
-                                    Don't have an account? <a href="register.html" class="text-primary">Create</a>
+                                <div class="font-weight-light">
+                                    <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #ffffff; background-color: #1069e6; border-radius: 4px; border: none" name="create" value="getMe"><span>Don't have an account?</span>
                                 </div>
                             </form>
                         </div>

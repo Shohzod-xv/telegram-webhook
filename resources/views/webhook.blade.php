@@ -1,62 +1,44 @@
 @extends('layouts/app')
 @section('content')
-    <div class="main-panel justify-content-center">
-        <div class="content-wrapper">
-            <div class="row">
-                <div class="col-sm-12 mb-4 mb-xl-0">
-                    <h4 class="font-weight-bold text-dark">Hi, welcome back!</h4>
-                    <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 grid-margin stretch-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Default form</h4>
-                            <p class="card-description">
-                                Basic form layout
-                            </p>
-                            <form class="forms-sample">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper d-flex justify-content-top auth px-0" >
+                <div class="row w-100 mx-0">
+                    <div class="col-lg-6 mx-auto mt-5">
+                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+                            <h4>Hello! let's get started</h4>
+                            <h6 class="font-weight-light">Sign in to continue.</h6>
+                            <form class="pt-3">
                                 <div class="form-group">
-                                    <label for="exampleInputUsername1">Username</label>
-                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <div class="mt-3">
+                                    <a class="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn" href="../../index.html">SIGN IN</a>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputConfirmPassword1">Confirm Password</label>
-                                    <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                                <div class="my-2 d-flex justify-content-between align-items-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label text-muted">
+                                            <input type="checkbox" class="form-check-input">
+                                            Keep me signed in
+                                            <i class="input-helper"></i></label>
+                                    </div>
+                                    <a href="#" class="auth-link text-black">Forgot password?</a>
                                 </div>
-                                <div class="form-check form-check-flat form-check-primary">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input">
-                                        Remember me
-                                        <i class="input-helper"></i></label>
+                                <div class="mb-2">
+                                    <button type="button" class="btn btn-block btn-facebook auth-form-btn">
+                                        <i class="mdi mdi-facebook mr-2"></i> Connect using facebook
+                                    </button>
                                 </div>
-                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                <button class="btn btn-light">Cancel</button>
+                                <div class="text-center mt-4 font-weight-light">
+                                    Don't have an account? <a href="register.html" class="text-primary">Create</a>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- content-wrapper ends -->
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
-        <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
-            </div>
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block mt-2">Distributed By: <a href="https://www.themewagon.com/" target="_blank">ThemeWagon</a></span>
-        </footer>
-
-        <!-- partial -->
-    </div>
 @endsection

@@ -25,6 +25,24 @@ class WebhookController extends Controller
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $results = curl_exec($ch);
             return view('webhook', compact('results'));
+        }elseif ($request['method'] == "setWebhook") {
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot" . $request['token'] . "/" . $request['method'] . "?url=" . $request['address']);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            $results = curl_exec($ch);
+            return view('webhook', compact('results'));
+        }elseif ($request['method'] == "deleteWebhook") {
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot" . $request['token'] . "/" . $request['method']);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            $results = curl_exec($ch);
+            return view('webhook', compact('results'));
+        }elseif ($request['method'] == "DropPendingUpdates") {
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot" . $request['token'] . "/deleteWebhook?drop_pending_updates=true");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            $results = curl_exec($ch);
+            return view('webhook', compact('results'));
         }
     }
 }

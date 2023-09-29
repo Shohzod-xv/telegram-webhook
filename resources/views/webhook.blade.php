@@ -23,13 +23,13 @@
                                     <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #ffffff; background-color: #f80a0a; border-radius: 4px; border: none" name="method" value="deleteWebhook"><span style="font-size: 13px;">Отключить webhook</span>
                                 </div>
                                 <div class="font-weight-light">
-                                    <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #ffffff; background-color: #eea321; border-radius: 4px; border: none;" name="method" value="getUpdates"><span style="font-size: 13px;">Получайте последние обновления</span>
+                                    <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #ffffff; background-color: #eea321; border-radius: 4px; border: none;" name="method" value="getUpdates"><span style="font-size: 13px;">Последние обновления</span>
                                 </div>
                                 <div class="font-weight-light">
                                     <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #ffffff; background-color: #01a7ff; border-radius: 4px; border: none" name="method" value="getMe"><span style="font-size: 13px;">Полная информация о боте</span>
                                 </div>
                                 <div class="font-weight-light">
-                                    <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #030303; background-color: rgba(115,115,118,0.44); border-radius: 4px; border: none" name="method" value="DropPendingUpdates"><span style="font-size: 13px;">Удалить ожидающий запрос</span>
+                                    <input type="submit" style="padding: 1px 5px 1px 5px; margin: 4px; color: #030303; background-color: rgba(115,115,118,0.44); border-radius: 4px; border: none" name="method" value="DropPendingUpdates"><span style="font-size: 13px;">Удалить все запрос</span>
                                 </div>
                             </form>
                         </div>

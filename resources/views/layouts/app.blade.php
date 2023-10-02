@@ -17,6 +17,11 @@
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                 <span class="icon-menu"></span>
+                <span class="text-info">
+                    <a href="https://t.me/shohzod_xv">
+                        Telegram
+                    </a>
+                </span>
             </button>
         </div>
     </nav>

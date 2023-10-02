@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WebhookController::class, 'index'])->name('home');
-Route::post('/webhook', [WebhookController::class, 'webhook'])->name('webhook');
+Route::post('/main', [WebhookController::class, 'webhook'])->name('webhook');
